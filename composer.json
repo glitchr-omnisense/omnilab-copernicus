@@ -1,0 +1,45 @@
+{
+    "name": "omnilab/copernicus",
+    "type": "library",
+    "description": "Omnilab Copernicus: the products of the Copernicus Data Space Ecosystem's STAC catalogue - Sentinel-1, -2, -3, -5P, Landsat, MODIS, the Copernicus DEM and services - searched by collection, point or box, period and cloud cover, page by page, with their footprints, properties, assets and thumbnails; open without an account (downloading the assets needs a CDSE token and stays with the application).",
+    "keywords": [
+        "science",
+        "earth-observation",
+        "satellite",
+        "sentinel",
+        "stac",
+        "copernicus",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Copernicus\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Copernicus\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

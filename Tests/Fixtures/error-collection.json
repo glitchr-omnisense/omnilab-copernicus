@@ -1,0 +1,1 @@
+{"detail":{"code":"CollectionInQuerryDoesNotExist","message":"One or more requested collections do not exist.","collections":["nope"],"hint":"Available collections are listed at /collections"}}

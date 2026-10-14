@@ -1,0 +1,940 @@
+{
+ "type": "FeatureCollection",
+ "links": [
+  {
+   "rel": "next",
+   "type": "application/geo+json",
+   "method": "GET",
+   "href": "https://stac.dataspace.copernicus.eu/v1/search?collections=sentinel-2-l2a&intersects={\"type\":\"Point\",\"coordinates\":[7.7521,48.5734]}&datetime=2026-10-05T00:00:00Z/2026-10-15T00:00:00Z&limit=2&sortby=-datetime&filter=eo:cloud_cover<=30&filter-lang=cql2-text&token=next:sentinel-2-l2a:S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607"
+  },
+  {
+   "rel": "root",
+   "type": "application/json",
+   "href": "https://stac.dataspace.copernicus.eu/v1/"
+  },
+  {
+   "rel": "self",
+   "type": "application/json",
+   "href": "https://stac.dataspace.copernicus.eu/v1/search?collections=sentinel-2-l2a&intersects=%7b%22type%22%3a%22Point%22%2c%22coordinates%22%3a%5b7.7521%2c48.5734%5d%7d&datetime=2026-10-05T00%3a00%3a00Z%2f2026-10-15T00%3a00%3a00Z&limit=2&sortby=-datetime&filter=eo%3acloud_cover%3c%3d30&filter-lang=cql2-text"
+  }
+ ],
+ "features": [
+  {
+   "id": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607",
+   "bbox": [
+    7.63917680224736,
+    47.757403531734624,
+    9.132782609970734,
+    48.75293650976542
+   ],
+   "type": "Feature",
+   "links": [
+    {
+     "rel": "collection",
+     "type": "application/json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a"
+    },
+    {
+     "rel": "parent",
+     "type": "application/json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a"
+    },
+    {
+     "rel": "root",
+     "type": "application/json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/"
+    },
+    {
+     "rel": "self",
+     "type": "application/geo+json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607"
+    },
+    {
+     "rel": "enclosure",
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/",
+     "type": "application/x-directory",
+     "title": "S3 path to source directory",
+     "auth:refs": [
+      "s3"
+     ],
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ]
+    },
+    {
+     "rel": "version-history",
+     "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE.zip",
+     "type": "application/json",
+     "title": "Product history record from the CDSE traceability service"
+    }
+   ],
+   "assets": {
+    "B04_10m": {
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/GRANULE/L2A_T32UMU_A059050_20261012T103605/IMG_DATA/R10m/T32UMU_20261012T102911_B04_10m.jp2",
+     "bands": [
+      {
+       "name": "B04",
+       "description": "Red (band 4)",
+       "eo:common_name": "red",
+       "eo:center_wavelength": 0.665,
+       "eo:full_width_half_max": 0.342
+      }
+     ],
+     "roles": [
+      "data",
+      "reflectance",
+      "sampling:original",
+      "gsd:10m"
+     ],
+     "alternate": {
+      "https": {
+       "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(922e9d3c-eea1-4125-acc8-7a97f0400c2a)/Nodes(S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE)/Nodes(GRANULE)/Nodes(L2A_T32UMU_A059050_20261012T103605)/Nodes(IMG_DATA)/Nodes(R10m)/Nodes(T32UMU_20261012T102911_B04_10m.jp2)/$value",
+       "auth:refs": [
+        "oidc"
+       ],
+       "storage:refs": [],
+       "alternate:name": "HTTPS"
+      }
+     },
+     "auth:refs": [
+      "s3"
+     ],
+     "file:size": 125315648,
+     "proj:bbox": [
+      399960,
+      5290200,
+      509760,
+      5400000
+     ],
+     "proj:code": "EPSG:32632",
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ],
+     "view:azimuth": 250.930460862082,
+     "file:checksum": "1620923b3f83e3d689e42df265da0d9602303b14f143987848943b9c0a7cad94525e",
+     "proj:transform": [
+      10,
+      0,
+      399960,
+      0,
+      -10,
+      5400000
+     ],
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/GRANULE/L2A_T32UMU_A059050_20261012T103605/IMG_DATA/R10m/T32UMU_20261012T102911_B04_10m.jp2",
+     "view:incidence_angle": 3.92680642701149,
+     "gsd": 10,
+     "type": "image/jp2",
+     "title": "Red (band 4) - 10m",
+     "nodata": 0,
+     "data_type": "uint16",
+     "proj:shape": [
+      10980,
+      10980
+     ],
+     "raster:scale": 0.0001,
+     "raster:offset": -0.1,
+     "alternate:name": "S3"
+    },
+    "Product": {
+     "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(922e9d3c-eea1-4125-acc8-7a97f0400c2a)/$value",
+     "roles": [
+      "data",
+      "metadata",
+      "archive"
+     ],
+     "auth:refs": [
+      "oidc"
+     ],
+     "file:size": 1177021572,
+     "file:checksum": "d50110dd83f06c3568894915018982e8f75100",
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE.zip",
+     "type": "application/zip",
+     "title": "Zipped product"
+    },
+    "SCL_20m": {
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/GRANULE/L2A_T32UMU_A059050_20261012T103605/IMG_DATA/R20m/T32UMU_20261012T102911_SCL_20m.jp2",
+     "roles": [
+      "data",
+      "sampling:original",
+      "gsd:20m"
+     ],
+     "title": "Scene classification map (SCL) - 20m",
+     "alternate": {
+      "https": {
+       "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(922e9d3c-eea1-4125-acc8-7a97f0400c2a)/Nodes(S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE)/Nodes(GRANULE)/Nodes(L2A_T32UMU_A059050_20261012T103605)/Nodes(IMG_DATA)/Nodes(R20m)/Nodes(T32UMU_20261012T102911_SCL_20m.jp2)/$value",
+       "auth:refs": [
+        "oidc"
+       ],
+       "storage:refs": [],
+       "alternate:name": "HTTPS"
+      }
+     },
+     "auth:refs": [
+      "s3"
+     ],
+     "file:size": 2905891,
+     "proj:bbox": [
+      399960,
+      5290200,
+      509760,
+      5400000
+     ],
+     "proj:code": "EPSG:32632",
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ],
+     "file:checksum": "1620750ca1eba0ca7765dbfde3f541ca1f89554880ffbd7ebceb4afb37d0ed60d6f6",
+     "proj:transform": [
+      20,
+      0,
+      399960,
+      0,
+      -20,
+      5400000
+     ],
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/GRANULE/L2A_T32UMU_A059050_20261012T103605/IMG_DATA/R20m/T32UMU_20261012T102911_SCL_20m.jp2",
+     "classification:classes": [
+      {
+       "name": "no_data",
+       "value": 0,
+       "nodata": true,
+       "percentage": 6e-05
+      },
+      {
+       "name": "saturated_or_defective",
+       "value": 1,
+       "percentage": 0.0
+      },
+      {
+       "name": "dark_area_pixels",
+       "value": 2,
+       "percentage": 0.411724
+      },
+      {
+       "name": "cloud_shadows",
+       "value": 3,
+       "percentage": 11.032833
+      },
+      {
+       "name": "vegetation",
+       "value": 4,
+       "percentage": 46.110728
+      },
+      {
+       "name": "not_vegetated",
+       "value": 5,
+       "percentage": 12.382879
+      },
+      {
+       "name": "water",
+       "value": 6,
+       "percentage": 0.670901
+      },
+      {
+       "name": "unclassified",
+       "value": 7,
+       "percentage": 0.450437
+      },
+      {
+       "name": "cloud_medium_probability",
+       "value": 8,
+       "percentage": 8.822136
+      },
+      {
+       "name": "cloud_high_probability",
+       "value": 9,
+       "percentage": 14.869684
+      },
+      {
+       "name": "thin_cirrus",
+       "value": 10,
+       "percentage": 5.248659
+      },
+      {
+       "name": "snow",
+       "value": 11,
+       "percentage": 2e-05
+      }
+     ],
+     "gsd": 20,
+     "type": "image/jp2",
+     "nodata": 0,
+     "data_type": "uint8",
+     "proj:shape": [
+      5490,
+      5490
+     ],
+     "alternate:name": "S3"
+    },
+    "TCI_10m": {
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/GRANULE/L2A_T32UMU_A059050_20261012T103605/IMG_DATA/R10m/T32UMU_20261012T102911_TCI_10m.jp2",
+     "bands": [
+      {
+       "eo:center_wavelength": 0.665,
+       "eo:full_width_half_max": 0.342,
+       "name": "B04",
+       "description": "Red (band 4)",
+       "eo:common_name": "red"
+      },
+      {
+       "eo:center_wavelength": 0.56,
+       "eo:full_width_half_max": 0.291,
+       "name": "B03",
+       "description": "Green (band 3)",
+       "eo:common_name": "green"
+      },
+      {
+       "eo:center_wavelength": 0.493,
+       "eo:full_width_half_max": 0.267,
+       "name": "B02",
+       "description": "Blue (band 2)",
+       "eo:common_name": "blue"
+      }
+     ],
+     "roles": [
+      "visual",
+      "sampling:original",
+      "gsd:10m"
+     ],
+     "alternate": {
+      "https": {
+       "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(922e9d3c-eea1-4125-acc8-7a97f0400c2a)/Nodes(S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE)/Nodes(GRANULE)/Nodes(L2A_T32UMU_A059050_20261012T103605)/Nodes(IMG_DATA)/Nodes(R10m)/Nodes(T32UMU_20261012T102911_TCI_10m.jp2)/$value",
+       "auth:refs": [
+        "oidc"
+       ],
+       "storage:refs": [],
+       "alternate:name": "HTTPS"
+      }
+     },
+     "auth:refs": [
+      "s3"
+     ],
+     "file:size": 135368793,
+     "proj:bbox": [
+      399960,
+      5290200,
+      509760,
+      5400000
+     ],
+     "proj:code": "EPSG:32632",
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ],
+     "file:checksum": "162013dff48a701eadb340d60bf2ed30311b703a7c13e7f8894c17fe8972fbebd846",
+     "proj:transform": [
+      10,
+      0,
+      399960,
+      0,
+      -10,
+      5400000
+     ],
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/GRANULE/L2A_T32UMU_A059050_20261012T103605/IMG_DATA/R10m/T32UMU_20261012T102911_TCI_10m.jp2",
+     "gsd": 10,
+     "type": "image/jp2",
+     "title": "True color image",
+     "nodata": 0,
+     "data_type": "uint8",
+     "proj:shape": [
+      10980,
+      10980
+     ],
+     "alternate:name": "S3"
+    },
+    "thumbnail": {
+     "href": "https://datahub.creodias.eu/odata/v1/Assets(fd6c2644-a590-447d-90aa-57775031edc9)/$value",
+     "roles": [
+      "thumbnail",
+      "overview"
+     ],
+     "alternate": {
+      "s3": {
+       "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607-ql.jpg",
+       "auth:refs": [
+        "s3"
+       ],
+       "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+       ],
+       "alternate:name": "S3"
+      }
+     },
+     "file:size": 41762,
+     "proj:shape": [
+      343,
+      343
+     ],
+     "file:checksum": "d5011053a06f8750ab0e155555747ad826e65a",
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE/S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607-ql.jpg",
+     "type": "image/jpeg",
+     "title": "Quicklook",
+     "data_type": "uint8",
+     "proj:code": null,
+     "alternate:name": "HTTPS"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.63917680224736,
+       48.74497768846318
+      ],
+      [
+       7.665135068084715,
+       47.757403531734624
+      ],
+      [
+       9.130248809843977,
+       47.765092664464426
+      ],
+      [
+       9.132782609970734,
+       48.75293650976542
+      ],
+      [
+       7.63917680224736,
+       48.74497768846318
+      ]
+     ]
+    ]
+   },
+   "collection": "sentinel-2-l2a",
+   "properties": {
+    "gsd": 10,
+    "created": "2026-10-12T17:54:15.000000Z",
+    "expires": "2262-01-01T00:00:00.000000Z",
+    "updated": "2026-10-12T18:00:57.643492Z",
+    "_private": {
+     "visible": true,
+     "product_name": "S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607.SAFE",
+     "product_size": 1176986586,
+     "product_uuid": "922e9d3c-eea1-4125-acc8-7a97f0400c2a"
+    },
+    "datetime": "2026-10-12T10:29:11.024000Z",
+    "platform": "sentinel-2a",
+    "grid:code": "MGRS-32UMU",
+    "published": "2026-10-12T17:59:48.944336Z",
+    "instruments": [
+     "msi"
+    ],
+    "auth:schemes": {
+     "s3": {
+      "type": "s3"
+     },
+     "oidc": {
+      "type": "openIdConnect",
+      "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+     }
+    },
+    "end_datetime": "2026-10-12T10:29:11.024000Z",
+    "product:type": "S2MSI2A",
+    "view:azimuth": 250.79274554376627,
+    "constellation": "sentinel-2",
+    "eo:snow_cover": 2e-05,
+    "eo:cloud_cover": 28.94,
+    "start_datetime": "2026-10-12T10:29:11.024000Z",
+    "sat:orbit_state": "descending",
+    "eopf:datatake_id": "GS2A_20261012T102911_059050_N05.13",
+    "processing:level": "L2",
+    "view:sun_azimuth": 169.496737735805,
+    "eopf:datastrip_id": "S2A_OPER_MSI_L2A_DS_2APS_20261012T170607_S20261012T103605_N05.13",
+    "processing:version": "05.13",
+    "product:timeliness": "PT24H",
+    "sat:absolute_orbit": 59050,
+    "sat:relative_orbit": 108,
+    "view:sun_elevation": 33.7143235982339,
+    "processing:datetime": "2026-10-12T17:06:07.000000Z",
+    "processing:facility": "ESA",
+    "eopf:instrument_mode": "INS-NOBS",
+    "eopf:origin_datetime": "2026-10-12T17:54:15.000000Z",
+    "view:incidence_angle": 4.032367314112311,
+    "product:timeliness_category": "NRT",
+    "sat:platform_international_designator": "2015-028A"
+   },
+   "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json"
+   ],
+   "stac_version": "1.1.0"
+  },
+  {
+   "id": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607",
+   "bbox": [
+    6.280641504771698,
+    47.734155602346505,
+    7.796401702235196,
+    48.74648044472784
+   ],
+   "type": "Feature",
+   "links": [
+    {
+     "rel": "collection",
+     "type": "application/json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a"
+    },
+    {
+     "rel": "parent",
+     "type": "application/json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a"
+    },
+    {
+     "rel": "root",
+     "type": "application/json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/"
+    },
+    {
+     "rel": "self",
+     "type": "application/geo+json",
+     "href": "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a/items/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607"
+    },
+    {
+     "rel": "enclosure",
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/",
+     "type": "application/x-directory",
+     "title": "S3 path to source directory",
+     "auth:refs": [
+      "s3"
+     ],
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ]
+    },
+    {
+     "rel": "version-history",
+     "href": "https://trace.dataspace.copernicus.eu/api/v1/traces/name/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE.zip",
+     "type": "application/json",
+     "title": "Product history record from the CDSE traceability service"
+    }
+   ],
+   "assets": {
+    "B04_10m": {
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/GRANULE/L2A_T32ULU_A059050_20261012T103605/IMG_DATA/R10m/T32ULU_20261012T102911_B04_10m.jp2",
+     "bands": [
+      {
+       "name": "B04",
+       "description": "Red (band 4)",
+       "eo:common_name": "red",
+       "eo:center_wavelength": 0.665,
+       "eo:full_width_half_max": 0.342
+      }
+     ],
+     "roles": [
+      "data",
+      "reflectance",
+      "sampling:original",
+      "gsd:10m"
+     ],
+     "alternate": {
+      "https": {
+       "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(0798156d-62f3-4499-9340-c2d4f1f7cd25)/Nodes(S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE)/Nodes(GRANULE)/Nodes(L2A_T32ULU_A059050_20261012T103605)/Nodes(IMG_DATA)/Nodes(R10m)/Nodes(T32ULU_20261012T102911_B04_10m.jp2)/$value",
+       "auth:refs": [
+        "oidc"
+       ],
+       "storage:refs": [],
+       "alternate:name": "HTTPS"
+      }
+     },
+     "auth:refs": [
+      "s3"
+     ],
+     "file:size": 122653690,
+     "proj:bbox": [
+      300000,
+      5290200,
+      409800,
+      5400000
+     ],
+     "proj:code": "EPSG:32632",
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ],
+     "view:azimuth": 105.430569739748,
+     "file:checksum": "1620ac496438af2c77636a96fa2713e2f7d2e3be0e2dc43e91bee2a0bb4647efc206",
+     "proj:transform": [
+      10,
+      0,
+      300000,
+      0,
+      -10,
+      5400000
+     ],
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/GRANULE/L2A_T32ULU_A059050_20261012T103605/IMG_DATA/R10m/T32ULU_20261012T102911_B04_10m.jp2",
+     "view:incidence_angle": 4.53414002364188,
+     "gsd": 10,
+     "type": "image/jp2",
+     "title": "Red (band 4) - 10m",
+     "nodata": 0,
+     "data_type": "uint16",
+     "proj:shape": [
+      10980,
+      10980
+     ],
+     "raster:scale": 0.0001,
+     "raster:offset": -0.1,
+     "alternate:name": "S3"
+    },
+    "Product": {
+     "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(0798156d-62f3-4499-9340-c2d4f1f7cd25)/$value",
+     "roles": [
+      "data",
+      "metadata",
+      "archive"
+     ],
+     "auth:refs": [
+      "oidc"
+     ],
+     "file:size": 1194605774,
+     "file:checksum": "d501102d5ba15ea80df92759c5c346293e5821",
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE.zip",
+     "type": "application/zip",
+     "title": "Zipped product"
+    },
+    "SCL_20m": {
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/GRANULE/L2A_T32ULU_A059050_20261012T103605/IMG_DATA/R20m/T32ULU_20261012T102911_SCL_20m.jp2",
+     "roles": [
+      "data",
+      "sampling:original",
+      "gsd:20m"
+     ],
+     "title": "Scene classification map (SCL) - 20m",
+     "alternate": {
+      "https": {
+       "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(0798156d-62f3-4499-9340-c2d4f1f7cd25)/Nodes(S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE)/Nodes(GRANULE)/Nodes(L2A_T32ULU_A059050_20261012T103605)/Nodes(IMG_DATA)/Nodes(R20m)/Nodes(T32ULU_20261012T102911_SCL_20m.jp2)/$value",
+       "auth:refs": [
+        "oidc"
+       ],
+       "storage:refs": [],
+       "alternate:name": "HTTPS"
+      }
+     },
+     "auth:refs": [
+      "s3"
+     ],
+     "file:size": 1820552,
+     "proj:bbox": [
+      300000,
+      5290200,
+      409800,
+      5400000
+     ],
+     "proj:code": "EPSG:32632",
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ],
+     "file:checksum": "1620f591dcdea531ba725c65b55dfb786037dd3b63c9ad6b71affb11bdd539aa2022",
+     "proj:transform": [
+      20,
+      0,
+      300000,
+      0,
+      -20,
+      5400000
+     ],
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/GRANULE/L2A_T32ULU_A059050_20261012T103605/IMG_DATA/R20m/T32ULU_20261012T102911_SCL_20m.jp2",
+     "classification:classes": [
+      {
+       "name": "no_data",
+       "value": 0,
+       "nodata": true,
+       "percentage": 3.3e-05
+      },
+      {
+       "name": "saturated_or_defective",
+       "value": 1,
+       "percentage": 0.0
+      },
+      {
+       "name": "dark_area_pixels",
+       "value": 2,
+       "percentage": 0.359007
+      },
+      {
+       "name": "cloud_shadows",
+       "value": 3,
+       "percentage": 2.177744
+      },
+      {
+       "name": "vegetation",
+       "value": 4,
+       "percentage": 70.124358
+      },
+      {
+       "name": "not_vegetated",
+       "value": 5,
+       "percentage": 24.726923
+      },
+      {
+       "name": "water",
+       "value": 6,
+       "percentage": 0.652039
+      },
+      {
+       "name": "unclassified",
+       "value": 7,
+       "percentage": 0.120949
+      },
+      {
+       "name": "cloud_medium_probability",
+       "value": 8,
+       "percentage": 0.987389
+      },
+      {
+       "name": "cloud_high_probability",
+       "value": 9,
+       "percentage": 0.839417
+      },
+      {
+       "name": "thin_cirrus",
+       "value": 10,
+       "percentage": 0.01138
+      },
+      {
+       "name": "snow",
+       "value": 11,
+       "percentage": 0.0008
+      }
+     ],
+     "gsd": 20,
+     "type": "image/jp2",
+     "nodata": 0,
+     "data_type": "uint8",
+     "proj:shape": [
+      5490,
+      5490
+     ],
+     "alternate:name": "S3"
+    },
+    "TCI_10m": {
+     "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/GRANULE/L2A_T32ULU_A059050_20261012T103605/IMG_DATA/R10m/T32ULU_20261012T102911_TCI_10m.jp2",
+     "bands": [
+      {
+       "eo:center_wavelength": 0.665,
+       "eo:full_width_half_max": 0.342,
+       "name": "B04",
+       "description": "Red (band 4)",
+       "eo:common_name": "red"
+      },
+      {
+       "eo:center_wavelength": 0.56,
+       "eo:full_width_half_max": 0.291,
+       "name": "B03",
+       "description": "Green (band 3)",
+       "eo:common_name": "green"
+      },
+      {
+       "eo:center_wavelength": 0.493,
+       "eo:full_width_half_max": 0.267,
+       "name": "B02",
+       "description": "Blue (band 2)",
+       "eo:common_name": "blue"
+      }
+     ],
+     "roles": [
+      "visual",
+      "sampling:original",
+      "gsd:10m"
+     ],
+     "alternate": {
+      "https": {
+       "href": "https://download.dataspace.copernicus.eu/odata/v1/Products(0798156d-62f3-4499-9340-c2d4f1f7cd25)/Nodes(S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE)/Nodes(GRANULE)/Nodes(L2A_T32ULU_A059050_20261012T103605)/Nodes(IMG_DATA)/Nodes(R10m)/Nodes(T32ULU_20261012T102911_TCI_10m.jp2)/$value",
+       "auth:refs": [
+        "oidc"
+       ],
+       "storage:refs": [],
+       "alternate:name": "HTTPS"
+      }
+     },
+     "auth:refs": [
+      "s3"
+     ],
+     "file:size": 135540911,
+     "proj:bbox": [
+      300000,
+      5290200,
+      409800,
+      5400000
+     ],
+     "proj:code": "EPSG:32632",
+     "storage:refs": [
+      "cdse-s3",
+      "creodias-s3"
+     ],
+     "file:checksum": "162048a29e7899dee732b42dc2ade4ebfdff2c0240f033ffd780716180a631200719",
+     "proj:transform": [
+      10,
+      0,
+      300000,
+      0,
+      -10,
+      5400000
+     ],
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/GRANULE/L2A_T32ULU_A059050_20261012T103605/IMG_DATA/R10m/T32ULU_20261012T102911_TCI_10m.jp2",
+     "gsd": 10,
+     "type": "image/jp2",
+     "title": "True color image",
+     "nodata": 0,
+     "data_type": "uint8",
+     "proj:shape": [
+      10980,
+      10980
+     ],
+     "alternate:name": "S3"
+    },
+    "thumbnail": {
+     "href": "https://datahub.creodias.eu/odata/v1/Assets(e1fd88d2-d0ff-4557-a854-b96cc9d0862d)/$value",
+     "roles": [
+      "thumbnail",
+      "overview"
+     ],
+     "alternate": {
+      "s3": {
+       "href": "s3://eodata/Sentinel-2/MSI/L2A/2026/10/12/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607-ql.jpg",
+       "auth:refs": [
+        "s3"
+       ],
+       "storage:refs": [
+        "cdse-s3",
+        "creodias-s3"
+       ],
+       "alternate:name": "S3"
+      }
+     },
+     "file:size": 30484,
+     "proj:shape": [
+      343,
+      343
+     ],
+     "file:checksum": "d50110ace4a6d2294b8733470bc6551c0ceb35",
+     "file:local_path": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE/S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607-ql.jpg",
+     "type": "image/jpeg",
+     "title": "Quicklook",
+     "data_type": "uint8",
+     "proj:code": null,
+     "alternate:name": "HTTPS"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.280641504771698,
+       48.7209148694678
+      ],
+      [
+       6.332457670261361,
+       47.734155602346505
+      ],
+      [
+       7.796401702235196,
+       47.75885537254857
+      ],
+      [
+       7.772994464211592,
+       48.74648044472784
+      ],
+      [
+       6.280641504771698,
+       48.7209148694678
+      ]
+     ]
+    ]
+   },
+   "collection": "sentinel-2-l2a",
+   "properties": {
+    "gsd": 10,
+    "created": "2026-10-12T17:55:07.000000Z",
+    "expires": "2262-01-01T00:00:00.000000Z",
+    "updated": "2026-10-12T18:04:01.215256Z",
+    "_private": {
+     "visible": true,
+     "product_name": "S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607.SAFE",
+     "product_size": 1194570788,
+     "product_uuid": "0798156d-62f3-4499-9340-c2d4f1f7cd25"
+    },
+    "datetime": "2026-10-12T10:29:11.024000Z",
+    "platform": "sentinel-2a",
+    "grid:code": "MGRS-32ULU",
+    "published": "2026-10-12T18:02:39.648216Z",
+    "instruments": [
+     "msi"
+    ],
+    "auth:schemes": {
+     "s3": {
+      "type": "s3"
+     },
+     "oidc": {
+      "type": "openIdConnect",
+      "openIdConnectUrl": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/.well-known/openid-configuration"
+     }
+    },
+    "end_datetime": "2026-10-12T10:29:11.024000Z",
+    "product:type": "S2MSI2A",
+    "view:azimuth": 105.15741757630464,
+    "constellation": "sentinel-2",
+    "eo:snow_cover": 0.0008,
+    "eo:cloud_cover": 1.84,
+    "start_datetime": "2026-10-12T10:29:11.024000Z",
+    "sat:orbit_state": "descending",
+    "eopf:datatake_id": "GS2A_20261012T102911_059050_N05.13",
+    "processing:level": "L2",
+    "view:sun_azimuth": 167.92318383856,
+    "eopf:datastrip_id": "S2A_OPER_MSI_L2A_DS_2APS_20261012T170607_S20261012T103605_N05.13",
+    "processing:version": "05.13",
+    "product:timeliness": "PT24H",
+    "sat:absolute_orbit": 59050,
+    "sat:relative_orbit": 108,
+    "view:sun_elevation": 33.5554507333414,
+    "processing:datetime": "2026-10-12T17:06:07.000000Z",
+    "processing:facility": "ESA",
+    "eopf:instrument_mode": "INS-NOBS",
+    "eopf:origin_datetime": "2026-10-12T17:55:07.000000Z",
+    "view:incidence_angle": 4.625839751920354,
+    "product:timeliness_category": "NRT",
+    "sat:platform_international_designator": "2015-028A"
+   },
+   "stac_extensions": [
+    "https://cs-si.github.io/eopf-stac-extension/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json"
+   ],
+   "stac_version": "1.1.0"
+  }
+ ],
+ "numberReturned": 2
+}
