@@ -104,7 +104,7 @@ final class CopernicusSourceTest extends TestCase
         ], $this->calls[0]);
 
         $this->source()->products(new ProductQuery(place: new BBox(7.68, 48.53, 7.83, 48.64), from: new \DateTimeImmutable('2026-10-05T02:00:00+02:00'), limit: 500, sort: ProductQuery::OLDEST));
-        self::assertSame(['path' => '/v1/search', 'collections' => 'sentinel-2-l2a', 'bbox' => '7.68,48.53,7.83,48.64', 'datetime' => '2026-10-05T00:00:00Z/..', 'limit' => '100', 'sortby' => '+datetime'], $this->calls[1], 'the configured collection, a box, an open end in UTC, at most 100 a page');
+        self::assertSame(['path' => '/v1/search', 'collections' => 'sentinel-2-l2a', 'bbox' => '7.68,48.53,7.83,48.64', 'datetime' => '2026-10-05T00:00:00Z/..', 'limit' => '100', 'sortby' => 'datetime'], $this->calls[1], 'the configured collection, a box, an open end in UTC, at most 100 a page');
     }
 
     public function testPagesFollowTheNextToken(): void

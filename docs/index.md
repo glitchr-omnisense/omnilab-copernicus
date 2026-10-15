@@ -19,7 +19,8 @@ With the Symfony bundle, the factory is registered as `copernicus` (see the core
 ## Calls
 
 `products(ProductQuery)` only, as a GET on `https://stac.dataspace.copernicus.eu/v1/search`
-(STAC API 1.0, item search with its filter and sort extensions):
+(STAC API 1.0, item search with its filter and sort extensions), written and read by the core's
+STAC reader (`Omnilab\Source\Stac`, shared with omnilab/earthdata's `stac` option):
 
 | `ProductQuery` | STAC |
 |---|---|
@@ -28,7 +29,7 @@ With the Symfony bundle, the factory is registered as `copernicus` (see the core
 | `from`, `to` | `datetime`, `from/to` in RFC 3339, UTC; an open end is `..` |
 | `maxCloudCover` | `filter=eo:cloud_cover<=N`, `filter-lang=cql2-text` |
 | `limit` | `limit`, 100 at most (the catalogue refuses more Sentinel-2 items without fields selection) |
-| `sort` | `sortby=-datetime` (newest, the default) or `+datetime` |
+| `sort` | `sortby=-datetime` (newest, the default) or `datetime` (oldest: the same order as `+datetime`, checked on 2026-10-15; the CMR refuses the `+`) |
 | `cursor` | `token`: the one of the `next` link of the page before |
 
 The catalogue does not count the matches: `Page::$total` is null. Some collection ids, as the
