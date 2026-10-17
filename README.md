@@ -1,7 +1,7 @@
 # omnilab/copernicus
 
 The Copernicus Data Space Ecosystem's STAC catalogue for
-[glitchr/omnilab](https://github.com/glitchr-studio/omnilab): the products of Sentinel-1, -2,
+[omniscient/omnilab](https://github.com/glitchr-studio/omnilab): the products of Sentinel-1, -2,
 -3, -5P and -6, Landsat, MODIS, the Copernicus DEM and the Copernicus services, searched by
 collection, point or box, period and cloud cover, page by page - their footprint, properties,
 assets and thumbnail. Searching needs no account.
