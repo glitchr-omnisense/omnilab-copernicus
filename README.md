@@ -49,6 +49,17 @@ own licences (each collection's `license` link); the Data Space's
 
 See [docs/](docs/index.md).
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://documentation.dataspace.copernicus.eu/Quotas.html on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown); at most 4 in flight.
+- Licence: Copernicus Sentinel Data legal notice (Regulation (EU) No 1159/2013); commercial use: allowed.
+- Credit: required: Copernicus Sentinel data [Year] (https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or

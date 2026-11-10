@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "copernicus",
+    "rateLimits": null,
+    "concurrency": 4,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": true,
+            "text": "Copernicus Sentinel data [Year]",
+            "url": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": "Copernicus Sentinel Data legal notice (Regulation (EU) No 1159/2013)"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://dataspace.copernicus.eu/terms-and-conditions",
+        "policy": "https://documentation.dataspace.copernicus.eu/Quotas.html",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "Quotas page (2026-11-10), Copernicus General Users, column \"S3, OData, STAC\": no monthly request quota; 2000 requests/minute applies only to S3 (footnote 14), so no published request rate for STAC search; 4 concurrent connections and 20 MB/s per connection for Immediately Available Data (dropping to 1 connection and 1 MB/s after the 12 TB monthly transfer), stated per account: whether anonymous STAC searches count toward it is not said (concurrency 4 declared as the column's figure). Terms: fair use, no multiple accounts to exceed quotas. Sentinel data: free, full and open; the legal notice permits reproduction, distribution, communication to the public, adaptation; notice 'Copernicus Sentinel data [Year]' (or 'Contains modified Copernicus Sentinel data [Year]' when modified) required on distribution. Other collections carry their own licence (each collection's license link). The portal's own content is non-commercial, not the Sentinel data. Contact: help center 'Submit a request' (no API address published). No rate-limit headers seen on a test call."
+    }
+}
