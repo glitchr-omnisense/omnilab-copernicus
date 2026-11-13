@@ -29,6 +29,43 @@ omnilab:
                 collections: [sentinel-2-l2a]    # what a query that names none searches
 ```
 
+## Install and a first call
+
+```sh
+composer require omnilab/copernicus
+```
+
+A real call, with no account and no key: the Sentinel-2 L2A scenes over Strasbourg in the first half
+of October 2026, from the Copernicus Data Space's STAC catalogue (searching needs no account).
+`mailto` is your address, sent in the User-Agent so that the service can reach you before it blocks
+a caller; the source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Copernicus\CopernicusSourceFactory;
+use Omnilab\Model\Point;
+use Omnilab\Source\ProductQuery;
+
+$copernicus = (new CopernicusSourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$scenes = $copernicus->products(new ProductQuery(['sentinel-2-l2a'], new Point(48.5734, 7.7521),
+    new DateTimeImmutable('2026-10-01'), new DateTimeImmutable('2026-10-14T23:59:59Z'), maxCloudCover: 30, limit: 5));
+foreach ($scenes as $scene) {
+    echo $scene->datetime->format('Y-m-d H:i'), ' ', $scene->cloudCover(), ' % cloud ', $scene->id, "\n";
+}
+```
+
+Its output on 2026-11-13:
+
+```
+2026-10-12 10:29 28.94 % cloud S2A_MSIL2A_20261012T102911_N0513_R108_T32UMU_20261012T170607
+2026-10-12 10:29 1.84 % cloud S2A_MSIL2A_20261012T102911_N0513_R108_T32ULU_20261012T170607
+2026-10-05 10:28 11.1 % cloud S2B_MSIL2A_20261005T102859_N0513_R108_T32UMU_20261005T142235
+2026-10-05 10:28 5.62 % cloud S2B_MSIL2A_20261005T102859_N0513_R108_T32ULU_20261005T142235
+```
+
 ## Downloading: out of scope
 
 Every asset's address is kept: an `s3://eodata/...` one (the CDSE S3 endpoint, with S3 keys) and
